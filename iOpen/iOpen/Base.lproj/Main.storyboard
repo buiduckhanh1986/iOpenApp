@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnE-XH-akB">
+                                <state key="normal" title="Open SMS URL"/>
+                                <connections>
+                                    <action selector="openSMS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2yS-Tg-huM"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text này sẽ gửi đến app kia" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqV-Ms-iCT">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvF-p0-QpY">
+                                <frame key="frameInset" minX="156" minY="215" width="71" height="30"/>
+                                <state key="normal" title="Mở app 2"/>
+                                <connections>
+                                    <action selector="openApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2MJ-DM-LAi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lnE-XH-akB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4oU-e7-74S"/>
+                            <constraint firstItem="lnE-XH-akB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="9Qv-kk-i4q"/>
+                            <constraint firstItem="lqV-Ms-iCT" firstAttribute="top" secondItem="lnE-XH-akB" secondAttribute="bottom" constant="45" id="Fdh-x3-Veg"/>
+                            <constraint firstItem="RvF-p0-QpY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JJ2-og-wL3"/>
+                            <constraint firstItem="RvF-p0-QpY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O0O-Re-dPS"/>
+                            <constraint firstItem="lqV-Ms-iCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="em0-5D-cjj"/>
+                            <constraint firstItem="RvF-p0-QpY" firstAttribute="top" secondItem="lqV-Ms-iCT" secondAttribute="bottom" constant="40" id="sZK-U5-ZYd"/>
+                            <constraint firstItem="RvF-p0-QpY" firstAttribute="top" secondItem="lqV-Ms-iCT" secondAttribute="bottom" constant="40" id="ybt-fz-fh7"/>
+                            <constraint firstItem="lqV-Ms-iCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z1d-Ci-BJe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfDataSend" destination="lqV-Ms-iCT" id="fVF-H4-xsd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
